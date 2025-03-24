@@ -24,7 +24,7 @@ class Cart(models.Model):
     quantity = models.IntegerField()
 
 # Wishlist Model
-class Wishlist(models.Model):
+class Watchlist(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
 
